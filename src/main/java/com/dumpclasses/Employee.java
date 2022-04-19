@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 @Data
 public class Employee {
 
+    
     public Double getSalary() {
         return salary;
     }
