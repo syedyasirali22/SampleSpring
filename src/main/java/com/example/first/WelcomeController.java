@@ -57,4 +57,17 @@ public class WelcomeController {
         return "Welcome to Spring Boot";
     }
 
+
+    @GetMapping("/testPolymorphish")
+    public String poly() {
+        Employee employee = new Employee(null, "A", "Manager");
+        Optional<Object> nullSalaryOptional = Optional.ofNullable(employee.getSalary());
+        Optional<String> designationOptional = Optional.ofNullable(employee.getDesignation());
+        System.out.println(designationOptional
+                .map(String::toUpperCase)
+                .orElseGet(()->"Some default designation"));
+
+
+        return "Welcome to Spring Boot";
+    }
 }

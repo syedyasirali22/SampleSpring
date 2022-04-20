@@ -6,7 +6,11 @@ import org.springframework.stereotype.Component;
 @Component
 @Data
 public class Employee {
-    
+
+    private Double salary;
+    private String grade;
+    private String designation;
+
     public Double getSalary() {
         return salary;
     }
@@ -18,11 +22,6 @@ public class Employee {
     public Employee(Double salary) {
         this.salary = salary;
     }
-
-
-    private Double salary;
-    private String grade;
-    private String designation;
 
     public Employee(Double salary, String grade) {
         this.salary = salary;
