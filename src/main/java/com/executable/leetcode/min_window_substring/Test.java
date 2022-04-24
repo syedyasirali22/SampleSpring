@@ -1,4 +1,4 @@
-package com.executable.min_window_substring;
+package com.executable.leetcode.min_window_substring;
 
 import java.util.HashMap;
 import java.util.Map;
